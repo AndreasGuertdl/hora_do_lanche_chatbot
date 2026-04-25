@@ -1,0 +1,562 @@
+{
+  "menu": {
+    "lanchesNoPrato": [
+      {
+        "id": "burger-prato-classico",
+        "name": "Burger Clássico no Prato",
+        "description": "Carne bovina 150g, alface, tomate, cebola, maionese, acompanhado de batata frita e bebida",
+        "price": 29.50,
+        "category": "lanches_no_prato",
+        "image": "🍔",
+        "ingredients": ["carne", "tomate", "alface", "batata"]
+      },
+      {
+        "id": "burger-prato-duplo",
+        "name": "Burger Duplo no Prato",
+        "description": "Duas carnes bovinas 150g cada, queijo duplo, alface, tomate, acompanhado de batata frita e bebida",
+        "price": 35.00,
+        "category": "lanches_no_prato",
+        "image": "🍔🍔",
+        "ingredients": ["carne", "queijo", "tomate", "alface", "batata"]
+      },
+      {
+        "id": "frango-prato",
+        "name": "Frango Crispy no Prato",
+        "description": "Peito de frango empanado, alface, tomate, acompanhado de batata frita e bebida",
+        "price": 32.00,
+        "category": "lanches_no_prato",
+        "image": "🍗",
+        "ingredients": ["frango", "tomate", "alface", "batata"]
+      }
+    ],
+    "pratosLight": [
+      {
+        "id": "salada-frango",
+        "name": "Salada com Frango",
+        "description": "Alface, tomate, cebola, cenoura, frango grelhado, azeite e vinagre",
+        "price": 27.50,
+        "category": "pratos_light",
+        "image": "🥗",
+        "ingredients": ["frango", "alface", "tomate"]
+      },
+      {
+        "id": "salada-mista",
+        "name": "Salada Mista",
+        "description": "Alface, tomate, cebola, cenoura, brócolis, tomate cereja, azeite e vinagre",
+        "price": 22.00,
+        "category": "pratos_light",
+        "image": "🥗",
+        "ingredients": ["alface", "tomate", "cenoura"]
+      },
+      {
+        "id": "grelhado-frango",
+        "name": "Frango Grelhado",
+        "description": "Peito de frango grelhado, acompanhado de arroz, feijão e salada",
+        "price": 28.00,
+        "category": "pratos_light",
+        "image": "🍗",
+        "ingredients": ["frango", "arroz", "feijão"]
+      }
+    ],
+    "porcoes": [
+      {
+        "id": "porcao-batata-frita",
+        "name": "Porção de Batata Frita",
+        "description": "Batata frita crocante com sal",
+        "price": 15.00,
+        "category": "porcoes",
+        "image": "🍟",
+        "ingredients": ["batata"]
+      },
+      {
+        "id": "porcao-batata-ondulada",
+        "name": "Porção de Batata Ondulada",
+        "description": "Batata ondulada crocante com tempero especial",
+        "price": 17.00,
+        "category": "porcoes",
+        "image": "🍟",
+        "ingredients": ["batata"]
+      },
+      {
+        "id": "porcao-aros-cebola",
+        "name": "Porção de Aros de Cebola",
+        "description": "Aros de cebola empanados e fritos",
+        "price": 16.00,
+        "category": "porcoes",
+        "image": "🧅",
+        "ingredients": ["cebola"]
+      },
+      {
+        "id": "porcao-frango-crispy",
+        "name": "Porção Frango Crispy",
+        "description": "6 pedaços de frango empanado e crocante",
+        "price": 26.00,
+        "category": "porcoes",
+        "image": "🍗",
+        "ingredients": ["frango"]
+      },
+      {
+        "id": "porcao-bolinhas-queijo",
+        "name": "Porção Bolinhas de Queijo",
+        "description": "Bolinhas de queijo empanadas e fritas",
+        "price": 18.00,
+        "category": "porcoes",
+        "image": "🧀",
+        "ingredients": ["queijo"]
+      }
+    ],
+    "pizzas": [
+      {
+        "id": "pizza-mozzarella",
+        "name": "Pizza Mozzarella",
+        "description": "Molho de tomate, mozzarela e orégano",
+        "price": 32.50,
+        "category": "pizzas",
+        "image": "🍕",
+        "sizes": ["pequena", "média", "grande"],
+        "sizePrices": {
+          "pequena": 28.00,
+          "média": 32.50,
+          "grande": 42.00
+        },
+        "ingredients": ["mozzarela", "tomate"]
+      },
+      {
+        "id": "pizza-pepperoni",
+        "name": "Pizza Pepperoni",
+        "description": "Molho de tomate, mozzarela, pepperoni e orégano",
+        "price": 35.00,
+        "category": "pizzas",
+        "image": "🍕",
+        "sizes": ["pequena", "média", "grande"],
+        "sizePrices": {
+          "pequena": 30.00,
+          "média": 35.00,
+          "grande": 45.00
+        },
+        "ingredients": ["mozzarela", "pepperoni"]
+      },
+      {
+        "id": "pizza-portuguesa",
+        "name": "Pizza Portuguesa",
+        "description": "Molho de tomate, mozzarela, presunto, ovos, milho e cebola",
+        "price": 36.50,
+        "category": "pizzas",
+        "image": "🍕",
+        "sizes": ["pequena", "média", "grande"],
+        "sizePrices": {
+          "pequena": 32.00,
+          "média": 36.50,
+          "grande": 47.00
+        },
+        "ingredients": ["mozzarela", "presunto", "ovo"]
+      },
+      {
+        "id": "pizza-frango",
+        "name": "Pizza Frango com Catupiry",
+        "description": "Molho de tomate, mozzarela, frango desfiado e catupiry",
+        "price": 37.00,
+        "category": "pizzas",
+        "image": "🍕",
+        "sizes": ["pequena", "média", "grande"],
+        "sizePrices": {
+          "pequena": 32.50,
+          "média": 37.00,
+          "grande": 48.00
+        },
+        "ingredients": ["frango", "mozzarela", "catupiry"]
+      },
+      {
+        "id": "pizza-bacon",
+        "name": "Pizza Bacon",
+        "description": "Molho de tomate, mozzarela, bacon crocante e cebola",
+        "price": 38.00,
+        "category": "pizzas",
+        "image": "🍕",
+        "sizes": ["pequena", "média", "grande"],
+        "sizePrices": {
+          "pequena": 33.00,
+          "média": 38.00,
+          "grande": 49.00
+        },
+        "ingredients": ["bacon", "mozzarela", "cebola"]
+      },
+      {
+        "id": "pizza-vegetariana",
+        "name": "Pizza Vegetariana",
+        "description": "Molho de tomate, mozzarela, brócolis, pimentão, cebola e tomate",
+        "price": 34.00,
+        "category": "pizzas",
+        "image": "🍕",
+        "sizes": ["pequena", "média", "grande"],
+        "sizePrices": {
+          "pequena": 29.50,
+          "média": 34.00,
+          "grande": 44.00
+        },
+        "ingredients": ["mozzarela", "tomate", "brócolis"]
+      }
+    ],
+    "lanchesBaguete": [
+      {
+        "id": "baguete-classica",
+        "name": "Baguete Clássica",
+        "description": "Presunto, queijo, alface, tomate e maionese na baguete fresca",
+        "price": 23.00,
+        "category": "lanches_baguete",
+        "image": "🥖",
+        "ingredients": ["presunto", "queijo", "alface", "tomate"]
+      },
+      {
+        "id": "baguete-frango",
+        "name": "Baguete Frango",
+        "description": "Frango grelhado, bacon, queijo cheddar, alface, tomate na baguete",
+        "price": 26.00,
+        "category": "lanches_baguete",
+        "image": "🥖",
+        "ingredients": ["frango", "bacon", "queijo", "tomate"]
+      },
+      {
+        "id": "baguete-especial",
+        "name": "Baguete Especial",
+        "description": "Presunto, salame, queijo, alface, tomate, cebola roxa e azeite na baguete",
+        "price": 28.00,
+        "category": "lanches_baguete",
+        "image": "🥖",
+        "ingredients": ["presunto", "queijo", "alface", "tomate"]
+      },
+      {
+        "id": "baguete-rosbife",
+        "name": "Baguete Rosbife",
+        "description": "Rosbife, queijo derretido, tomate, cebola roxa e molho especial na baguete",
+        "price": 29.50,
+        "category": "lanches_baguete",
+        "image": "🥖",
+        "ingredients": ["rosbife", "queijo", "tomate", "cebola"]
+      }
+    ],
+    "lanches": [
+      {
+        "id": "burger-classico",
+        "name": "Burger Clássico",
+        "description": "Pão de hambúrguer, carne bovina 150g, alface, tomate, cebola e maionese",
+        "price": 22.00,
+        "category": "lanches",
+        "image": "🍔",
+        "ingredients": ["carne", "tomate", "alface", "cebola"]
+      },
+      {
+        "id": "burger-bacon",
+        "name": "Burger Bacon",
+        "description": "Pão de hambúrguer, carne bovina 150g, bacon, queijo cheddar, alface, tomate",
+        "price": 26.00,
+        "category": "lanches",
+        "image": "🥓🍔",
+        "ingredients": ["carne", "bacon", "queijo", "tomate"]
+      },
+      {
+        "id": "burger-duplo",
+        "name": "Burger Duplo",
+        "description": "Pão de hambúrguer, duas carnes bovinas 150g cada, queijo duplo, alface, tomate",
+        "price": 32.00,
+        "category": "lanches",
+        "image": "🍔🍔",
+        "ingredients": ["carne", "queijo", "tomate"]
+      },
+      {
+        "id": "frango-crispy",
+        "name": "Frango Crispy",
+        "description": "Pão de hambúrguer, peito de frango empanado e crocante, alface, tomate",
+        "price": 24.00,
+        "category": "lanches",
+        "image": "🍗",
+        "ingredients": ["frango", "tomate", "alface"]
+      },
+      {
+        "id": "frango-cheddar",
+        "name": "Frango com Cheddar",
+        "description": "Pão de hambúrguer, peito de frango grelhado, queijo cheddar, bacon, tomate e mel",
+        "price": 28.00,
+        "category": "lanches",
+        "image": "🍗🧀",
+        "ingredients": ["frango", "queijo", "bacon"]
+      },
+      {
+        "id": "misto-quente",
+        "name": "Misto Quente",
+        "description": "Pão francês, presunto, queijo derretido e tomate",
+        "price": 16.00,
+        "category": "lanches",
+        "image": "🥪",
+        "ingredients": ["presunto", "queijo", "tomate"]
+      },
+      {
+        "id": "cachorro-quente",
+        "name": "Cachorro Quente",
+        "description": "Pão especial, salsicha grelhada, cebola caramelizada, maionese e batata palha",
+        "price": 18.00,
+        "category": "lanches",
+        "image": "🌭",
+        "ingredients": ["salsicha", "cebola"]
+      }
+    ],
+    "beirutes": [
+      {
+        "id": "beirute-classico",
+        "name": "Beirute Clássico",
+        "description": "Pão sírio recheado com presunto, queijo, alface, tomate e maionese",
+        "price": 21.00,
+        "category": "beirutes",
+        "image": "🥙",
+        "ingredients": ["presunto", "queijo", "alface", "tomate"]
+      },
+      {
+        "id": "beirute-frango",
+        "name": "Beirute Frango",
+        "description": "Pão sírio recheado com frango grelhado, bacon, queijo, tomate e alface",
+        "price": 24.00,
+        "category": "beirutes",
+        "image": "🥙",
+        "ingredients": ["frango", "bacon", "queijo", "tomate"]
+      },
+      {
+        "id": "beirute-rosbife",
+        "name": "Beirute Rosbife",
+        "description": "Pão sírio recheado com rosbife, queijo, alface, tomate e cebola roxa",
+        "price": 26.00,
+        "category": "beirutes",
+        "image": "🥙",
+        "ingredients": ["rosbife", "queijo", "alface", "tomate"]
+      },
+      {
+        "id": "beirute-especial",
+        "name": "Beirute Especial",
+        "description": "Pão sírio recheado com presunto, salame, queijo, alface, tomate e molho especial",
+        "price": 25.00,
+        "category": "beirutes",
+        "image": "🥙",
+        "ingredients": ["presunto", "queijo", "alface", "tomate"]
+      }
+    ],
+    "beverages": [
+      {
+        "id": "refrigerante-cola",
+        "name": "Refrigerante Cola",
+        "description": "Bebida gelada refrescante",
+        "price": 6.00,
+        "category": "refrigerante",
+        "image": "🥤",
+        "sizes": ["pequeno", "médio", "grande"],
+        "sizePrices": {
+          "pequeno": 6.00,
+          "médio": 8.00,
+          "grande": 10.00
+        }
+      },
+      {
+        "id": "refrigerante-laranja",
+        "name": "Refrigerante Laranja",
+        "description": "Refrigerante de laranja",
+        "price": 6.00,
+        "category": "refrigerante",
+        "image": "🥤",
+        "sizes": ["pequeno", "médio", "grande"],
+        "sizePrices": {
+          "pequeno": 6.00,
+          "médio": 8.00,
+          "grande": 10.00
+        }
+      },
+      {
+        "id": "refrigerante-guarana",
+        "name": "Refrigerante Guaraná",
+        "description": "Refrigerante de guaraná",
+        "price": 6.00,
+        "category": "refrigerante",
+        "image": "🥤",
+        "sizes": ["pequeno", "médio", "grande"],
+        "sizePrices": {
+          "pequeno": 6.00,
+          "médio": 8.00,
+          "grande": 10.00
+        }
+      },
+      {
+        "id": "suco-natural",
+        "name": "Suco Natural",
+        "description": "Sucos naturais de frutas frescas",
+        "price": 8.00,
+        "category": "suco",
+        "image": "🧃",
+        "flavors": ["laranja", "maçã", "melancia", "morango"],
+        "sizes": ["pequeno", "médio", "grande"],
+        "sizePrices": {
+          "pequeno": 8.00,
+          "médio": 10.00,
+          "grande": 12.00
+        }
+      },
+      {
+        "id": "agua-mineral",
+        "name": "Água Mineral",
+        "description": "Água mineral gelada",
+        "price": 4.00,
+        "category": "agua",
+        "image": "💧",
+        "sizes": ["pequeno", "médio", "grande"],
+        "sizePrices": {
+          "pequeno": 4.00,
+          "médio": 5.00,
+          "grande": 7.00
+        }
+      },
+      {
+        "id": "cerveja",
+        "name": "Cerveja",
+        "description": "Cerveja gelada",
+        "price": 8.00,
+        "category": "bebida_alcoolica",
+        "image": "🍺",
+        "brands": ["Brahma", "Skol", "Heineken", "Corona"]
+      },
+      {
+        "id": "cafe",
+        "name": "Café",
+        "description": "Café coado fresco",
+        "price": 3.00,
+        "category": "cafe",
+        "image": "☕",
+        "sizes": ["pequeno", "grande"]
+      },
+      {
+        "id": "chopp",
+        "name": "Chopp",
+        "description": "Chopp gelado",
+        "price": 12.00,
+        "category": "bebida_alcoolica",
+        "image": "🍺",
+        "sizes": ["pequeno", "médio", "grande"],
+        "sizePrices": {
+          "pequeno": 12.00,
+          "médio": 18.00,
+          "grande": 24.00
+        }
+      },
+      {
+        "id": "milkshake",
+        "name": "Milkshake",
+        "description": "Milkshake cremoso em vários sabores",
+        "price": 12.00,
+        "category": "bebida",
+        "image": "🥛",
+        "flavors": ["morango", "chocolate", "baunilha", "caramelo"]
+      }
+    ],
+    "sobremesas": [
+      {
+        "id": "sorvete",
+        "name": "Sorvete",
+        "description": "Sorvete com várias opções de sabor",
+        "price": 8.00,
+        "category": "sobremesa",
+        "image": "🍦",
+        "flavors": ["chocolate", "baunilha", "morango", "pistache"],
+        "sizes": ["bolinha", "duas bolas", "três bolas"]
+      },
+      {
+        "id": "torta",
+        "name": "Torta Doce",
+        "description": "Seleta de tortas doces do dia",
+        "price": 9.00,
+        "category": "sobremesa",
+        "image": "🍰"
+      }
+    ],
+    "extras": [
+      {
+        "id": "extra-queijo",
+        "name": "Queijo Extra",
+        "price": 3.00
+      },
+      {
+        "id": "extra-bacon",
+        "name": "Bacon Extra",
+        "price": 4.00
+      },
+      {
+        "id": "extra-ovo",
+        "name": "Ovo",
+        "price": 2.50
+      },
+      {
+        "id": "batata-palha",
+        "name": "Batata Palha",
+        "price": 5.00
+      },
+      {
+        "id": "batata-ondulada",
+        "name": "Batata Ondulada",
+        "price": 6.00
+      },
+      {
+        "id": "cebola-caramelizada",
+        "name": "Cebola Caramelizada",
+        "price": 2.00
+      },
+      {
+        "id": "molho-barbecue",
+        "name": "Molho Barbecue",
+        "price": 1.50
+      },
+      {
+        "id": "molho-picante",
+        "name": "Molho Picante",
+        "price": 1.50
+      }
+    ],
+    "combos": [
+      {
+        "id": "combo-basico",
+        "name": "Combo Básico",
+        "description": "Sanduíche + Refrigerante (pequeno) + Batata Palha",
+        "originalPrice": 36.00,
+        "discountedPrice": 32.00,
+        "items": ["sandwich_choice", "refrigerante-cola", "batata-palha"]
+      },
+      {
+        "id": "combo-completo",
+        "name": "Combo Completo",
+        "description": "Sanduíche + Bebida (médio) + Batata Ondulada",
+        "originalPrice": 44.00,
+        "discountedPrice": 38.00,
+        "items": ["sandwich_choice", "beverage_choice", "batata-ondulada"]
+      },
+      {
+        "id": "combo-premium",
+        "name": "Combo Premium",
+        "description": "Burger Duplo + 2 Bebidas (médio) + Batata Ondulada + Molho Extra",
+        "originalPrice": 58.00,
+        "discountedPrice": 48.00,
+        "items": ["burger-duplo", "beverage_choice", "batata-ondulada"]
+      }
+    ]
+  },
+  "allergens": {
+    "gluten": "Contém glúten",
+    "lactose": "Contém lactose",
+    "amendoim": "Contém amendoim",
+    "castanha": "Contém castanha"
+  },
+  "deliveryOptions": {
+    "pickup": {
+      "name": "Retirada na Loja",
+      "time": "15-20 minutos",
+      "cost": 0.00
+    },
+    "delivery": {
+      "name": "Entrega em casa",
+      "time": "30-45 minutos",
+      "cost": 5.00
+    }
+  }
+}
