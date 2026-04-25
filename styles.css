@@ -168,6 +168,7 @@ body {
     border: 1px solid var(--border-color);
     color: var(--text-dark);
     border-radius: var(--radius-lg) var(--radius-lg) var(--radius-lg) var(--radius-sm);
+    min-width: 150px;
     max-width: 70%;
 }
 
@@ -181,6 +182,7 @@ body {
     background: var(--primary-red);
     color: var(--text-light);
     border-radius: var(--radius-lg) var(--radius-lg) var(--radius-sm) var(--radius-lg);
+    min-width: 150px;
     max-width: 70%;
 }
 
