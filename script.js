@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'pedido': 'Para fazer um pedido, descreva o que deseja!',
             'contato': 'Você pode nos ligar no (11) 99999-9999',
             'obrigado': 'De nada! Fico feliz em ajudar!',
-            'até': 'Até logo! Volte sempre!',
+            'até': 'Até logo! Volte sempre!'
         };
 
         const lowerMessage = userMessage.toLowerCase();
