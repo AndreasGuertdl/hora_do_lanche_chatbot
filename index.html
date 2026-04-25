@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Lanche - Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chatbot-container">
+        <!-- Header with Settings Button -->
+        <div class="chatbot-header">
+            <div class="header-content">
+                <h1>🍔 Hora do Lanche</h1>
+                <p>Seu assistente de pedidos</p>
+            </div>
+            <button class="settings-btn" id="settingsBtn" title="Configurações">⚙️</button>
+        </div>
+
+        <!-- Chat Messages Area -->
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot-message">
+                <img src="logo hora do lanche.png" alt="Bot" class="message-avatar">
+                <div class="message-content">
+                    Olá! Bem-vindo ao Hora do Lanche. Como posso ajudá-lo hoje?
+                </div>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="chat-input-area">
+            <form class="chat-form" id="messageForm">
+                <input 
+                    type="text" 
+                    class="chat-input" 
+                    id="messageInput"
+                    placeholder="Digite sua mensagem..."
+                    autocomplete="off"
+                >
+                <button type="submit" class="send-button">
+                    <span>Enviar</span>
+                </button>
+            </form>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="quick-actions" id="quickActions">
+            <button class="quick-btn">📋 Cardápio</button>
+            <button class="quick-btn">🛒 Meu Pedido</button>
+            <button class="quick-btn">📞 Contato</button>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settingsModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>⚙️ Configurações</h2>
+                <button class="modal-close" id="closeSettings">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="settings-section">
+                    <label for="apiKeyInput">Chave de API do Gemini:</label>
+                    <input 
+                        type="password" 
+                        id="apiKeyInput" 
+                        class="settings-input"
+                        placeholder="Cole sua chave de API aqui"
+                    >
+                    <small>Sua chave é armazenada apenas no seu navegador</small>
+                </div>
+                <div class="connection-status">
+                    <p id="connectionStatus">Status: Desconectado</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="saveSettings" class="btn-save">Salvar Chave</button>
+                <button id="testConnection" class="btn-test">Testar Conexão</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/chat.js"></script>
+</body>
+</html>
+
+    <div id="settingsModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-settings">&times;</span>
+            <h2>⚙️ Configurações</h2>
+            
+            <div class="settings-section">
+                <h3>🤖 Google Gemini API</h3>
+                <p>Adicione sua chave de API do Google Gemini para usar IA em tempo real.</p>
+                
+                <div class="form-group">
+                    <label for="apiKeyInput">Chave de API do Gemini:</label>
+                    <input 
+                        type="password" 
+                        id="apiKeyInput" 
+                        placeholder="Sua API key aqui (ex: AIza...)" 
+                        class="api-key-input"
+                    >
+                    <small>
+                        Sua chave não é enviada para nossos servidores. Fica armazenada apenas no seu navegador.
+                    </small>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="showApiKey"> Mostrar chave
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <button id="saveApiKey" class="btn-primary">Salvar Chave</button>
+                    <button id="removeApiKey" class="btn-secondary">Remover Chave</button>
+                </div>
+
+                <div id="apiStatus" class="api-status"></div>
+            </div>
+
+            <div class="settings-section">
+                <h3>ℹ️ Informações</h3>
+                <p><strong>Versão:</strong> 2.0.0 - Gemini API</p>
+                <p><strong>Status:</strong> <span id="connectionStatus">Aguardando API key...</span></p>
+                <p><strong>Modo:</strong> <span id="aiMode">Padrão (Pattern Matching)</span></p>
+            </div>
+
+            <div class="settings-section">
+                <h3>🔗 Como Conseguir sua API Key</h3>
+                <ol>
+                    <li>Acesse <a href="https://ai.google.dev" target="_blank">Google AI Studio</a></li>
+                    <li>Clique em "Get API Key"</li>
+                    <li>Selecione um projeto ou crie um novo</li>
+                    <li>Copie sua API key</li>
+                    <li>Cole aqui e salve</li>
+                </ol>
+            </div>
+
+            <div class="modal-actions">
+                <button id="closeSettings" class="btn-confirm">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="data/menu.json" type="application/json"></script>
+    <script src="data/ai-instructions.json" type="application/json"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html>
