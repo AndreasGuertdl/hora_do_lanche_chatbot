@@ -54,8 +54,14 @@ document.addEventListener('DOMContentLoaded', function() {
         contentDiv.className = 'message-content';
         contentDiv.textContent = text;
         
-        messageDiv.appendChild(avatar);
-        messageDiv.appendChild(contentDiv);
+        if (sender === 'bot') {
+            messageDiv.appendChild(avatar);
+            messageDiv.appendChild(contentDiv);
+        } else {
+            messageDiv.appendChild(contentDiv);
+            messageDiv.appendChild(avatar);
+        }
+        
         chatMessages.appendChild(messageDiv);
     }
 
