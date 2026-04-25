@@ -174,7 +174,7 @@ body {
 /* User Message */
 .user-message {
     justify-content: flex-end;
-    flex-direction: row-reverse;
+    align-self: flex-end;
 }
 
 .user-message .message-content {
