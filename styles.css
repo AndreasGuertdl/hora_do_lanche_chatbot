@@ -111,11 +111,13 @@ body {
 .chat-messages {
     flex: 1;
     overflow-y: auto;
+    overflow-x: hidden;
     padding: var(--spacing-lg);
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
     background: var(--bg-cream);
+    width: 100%;
 }
 
 /* Scrollbar Styling */
@@ -137,6 +139,8 @@ body {
     align-items: flex-end;
     gap: var(--spacing-sm);
     animation: slideIn 0.3s ease;
+    width: 100%;
+    min-width: 0;
 }
 
 @keyframes slideIn {
@@ -191,6 +195,9 @@ body {
     font-size: 14px;
     line-height: 1.5;
     word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
