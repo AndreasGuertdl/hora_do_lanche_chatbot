@@ -45,10 +45,16 @@ document.addEventListener('DOMContentLoaded', function() {
         const messageDiv = document.createElement('div');
         messageDiv.className = `message ${sender}-message`;
         
+        const avatar = document.createElement('img');
+        avatar.className = 'message-avatar';
+        avatar.alt = sender === 'bot' ? 'Bot' : 'You';
+        avatar.src = sender === 'bot' ? 'logo hora do lanche.png' : 'default pfp.webp';
+        
         const contentDiv = document.createElement('div');
         contentDiv.className = 'message-content';
         contentDiv.textContent = text;
         
+        messageDiv.appendChild(avatar);
         messageDiv.appendChild(contentDiv);
         chatMessages.appendChild(messageDiv);
     }

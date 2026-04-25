@@ -134,6 +134,8 @@ body {
 
 .message {
     display: flex;
+    align-items: flex-end;
+    gap: var(--spacing-sm);
     animation: slideIn 0.3s ease;
 }
 
@@ -148,6 +150,14 @@ body {
     }
 }
 
+.message-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
 /* Bot Message */
 .bot-message {
     justify-content: flex-start;
@@ -158,19 +168,20 @@ body {
     border: 1px solid var(--border-color);
     color: var(--text-dark);
     border-radius: var(--radius-lg) var(--radius-lg) var(--radius-lg) var(--radius-sm);
-    max-width: 85%;
+    max-width: 70%;
 }
 
 /* User Message */
 .user-message {
     justify-content: flex-end;
+    flex-direction: row-reverse;
 }
 
 .user-message .message-content {
     background: var(--primary-red);
     color: var(--text-light);
     border-radius: var(--radius-lg) var(--radius-lg) var(--radius-sm) var(--radius-lg);
-    max-width: 85%;
+    max-width: 70%;
 }
 
 .message-content {
